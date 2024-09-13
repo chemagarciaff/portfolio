@@ -69,10 +69,26 @@ p{
     background-color: rgb(117, 117, 117);
     border-radius: 5px;
     color: white;
+    text-decoration: none;
+    transition: 0.4s;
 }
+.header__buttons:hover{
+    scale: 1.1;
+    background-color: rgb(163, 196, 113);
+}
+
+
 
 .main {
     background-color: black;
     display:flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
+}
+
+.main__container{
+    border: 1px solid firebrick;
+    width: 95%;
+    margin-top: 30vh;
 }
