@@ -68,7 +68,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(117, 117, 117);
+    background-color: rgb(56, 55, 53);
     border-radius: 5px;
     color: white;
     text-decoration: none;
@@ -91,7 +91,6 @@ p {
 }
 
 .main__container {
-    border: 1px solid firebrick;
     width: 95%;
 }
 
@@ -105,15 +104,99 @@ p {
 
 .section{
     min-height: 100vh;
-    border: 1px solid gold;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.section__one{
-    justify-content: center;
+.section_one{
     align-items: start;
 }
+
+.section_two{
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.button{
+    background-color: rgb(56, 55, 53);
+    padding: 5px 50px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cv__button{
+    max-width: 50%;
+    color: white;
+}
+
+.section_two__title{
+    width: 100%;
+}
+
+.section_two__information{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0;
+}
+
+.personal_information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_two__list{
+    list-style: none;
+}
+
+
+.skill__cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 0;
+}
+
+.skill__card{
+    padding: 25px;
+    width: 80px;
+    max-height: 100px;
+    background-color:rgb(56, 55, 53) ;
+    font-variant: small-caps;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__number{
+    font-size: 40px;
+}
+
 span{
     color: rgb(145, 202, 59);
 }
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: white;
+}
+
