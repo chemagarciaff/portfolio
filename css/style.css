@@ -1,4 +1,4 @@
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,6 +8,8 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -21,7 +23,8 @@ body{
     position: sticky;
     top: 0;
 }
-.header__container{
+
+.header__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,36 +33,35 @@ body{
     width: 80%;
 }
 
-.perfil__img{
+.perfil__img {
     width: 70px;
     border-radius: 50%;
     border: 6px solid green;
 }
 
-.data{
+.data {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-p{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+p {
     margin: 0;
     padding: 0;
 }
 
-.nombre{
+.nombre {
     font-size: 30px;
     color: white;
 }
 
-.profesion{
+.profesion {
     font-size: 18px;
     color: white;
 }
 
-.header__buttons{
+.header__buttons {
     height: 35px;
     width: 100%;
     display: flex;
@@ -72,23 +74,46 @@ p{
     text-decoration: none;
     transition: 0.4s;
 }
-.header__buttons:hover{
+
+.header__buttons:hover {
     scale: 1.1;
-    background-color: rgb(163, 196, 113);
+    background-color: rgb(145, 202, 59);
 }
 
 
 
 .main {
     background-color: black;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
 }
 
-.main__container{
+.main__container {
     border: 1px solid firebrick;
     width: 95%;
-    margin-top: 30vh;
+}
+
+.main__title{
+    font-size: 50px;
+    margin: 0;
+}
+
+.secondary__title{
+}
+
+.section{
+    min-height: 100vh;
+    border: 1px solid gold;
+    display: flex;
+    flex-direction: column;
+}
+
+.section__one{
+    justify-content: center;
+    align-items: start;
+}
+span{
+    color: rgb(145, 202, 59);
 }
