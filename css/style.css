@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -85,7 +86,6 @@ p {
 }
 
 
-
 .main {
     background-color: black;
     display: flex;
@@ -95,6 +95,9 @@ p {
 }
 
 .main__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 95%;
 }
 
@@ -297,17 +300,20 @@ justify-content: start;
     width: 100%;
     background-color: rgb(56, 55, 53);
     border: none;
+    color: grey;
+
 }
 
-.form input, .textarea::placeholder{
-    color: grey;
-    border: none;
-}
-
-.form input, .textarea:focus{
-    color: grey;
-    border: none;
+input:focus, .textarea:focus{
+    color: rgb(145, 202, 59);
     outline: none;
+}
+
+.cohete{
+    width: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
 }
 
 
