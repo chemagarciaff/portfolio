@@ -118,7 +118,7 @@ p {
 .section_two{
     align-items: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
 }
 
 .section_three{
@@ -132,7 +132,12 @@ p {
     gap: 35px;
 }
 
-.button{
+.section_five{
+    align-items: center;
+    gap: 35px;
+}
+
+.button, .submit_button{
     background-color: rgb(56, 55, 53);
     padding: 5px 50px;
     border-radius: 15px;
@@ -142,8 +147,15 @@ p {
     justify-content: center;
     gap: 10px;
     transition: 0.4s;
+    border: none;
 }
-.button:hover{
+
+.submit_button{
+    width: 150px;
+    color: white;
+}
+
+.button:hover, .submit_button:hover{
     scale: 1.1;
     background-color: rgb(145, 202, 59);
     color: black;
@@ -157,7 +169,8 @@ p {
     color: white;
 }
 
-.section_two__information{
+.section_two__information, .section_five__information{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -173,11 +186,6 @@ p {
     justify-content: center;
     align-items: center;
 }
-
-.section_two__list{
-    list-style: none;
-}
-
 
 .skill__cards{
     display: flex;
@@ -220,7 +228,7 @@ align-items: start;
 justify-content: center;
 gap: 15px;
 position: relative;
-max-width: 220px;
+max-width: 200px;
 padding: 20px;
 justify-content: start;
 }
@@ -264,6 +272,7 @@ justify-content: start;
     width: 250px;
     height: 150px;
     transition: 0.4s;
+    transition-property: scale;
     border: 3px solid black;
 }
 .works__card img:hover{
@@ -271,8 +280,43 @@ justify-content: start;
     scale: 1.1;
 }
 
+.section_five__list li{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.form{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input, .form .textarea{
+    width: 100%;
+    background-color: rgb(56, 55, 53);
+    border: none;
+}
+
+.form input, .textarea::placeholder{
+    color: grey;
+    border: none;
+}
+
+.form input, .textarea:focus{
+    color: grey;
+    border: none;
+    outline: none;
+}
+
+
 span{
     color: rgb(145, 202, 59);
+}
+
+ul{
+    list-style: none;
 }
 
 a{
