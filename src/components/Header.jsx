@@ -33,7 +33,7 @@ function Header() {
       : "hover:text-[#BDB246] transition-colors";
 
   return (
-    <header className="w-full fixed top-0 left-0 px-10 gap-4 md:gap-6 h-[100px] flex items-center z-100 header-bg text-[#4D3F2B]">
+    <header className="w-full fixed top-0 left-0 px-10 gap-4 md:gap-6 h-[100px] flex items-center z-100 header-bg">
       {/* ===== Vista de ESCRITORIO ===== */}
       <div className="hidden xl:flex w-full justify-between items-center">
         <nav>
@@ -64,7 +64,7 @@ function Header() {
 
         <p className="text-[#BDB246] nombre absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-2xl font-bold whitespace-nowrap">
           {displayedText}
-          <span className="text-black" style={{ opacity: opacitySpan }}>
+          <span className="" style={{ opacity: opacitySpan }}>
             |
           </span>
         </p>
@@ -82,24 +82,24 @@ function Header() {
 
       {/* ===== Vista MÓVIL ===== */}
       <div className="flex w-full items-center justify-between xl:hidden">
-        <p className="text-2xl font-bold">{displayedText}</p>
+        <p className="text-2xl font-bold text-[#BDB246]">{displayedText}</p>
 
         <button
           onClick={toggleMenu}
-          className="flex flex-col justify-center items-center space-y-1 cursor-pointer z-50"
+          className="flex flex-col justify-center items-center space-y-1 cursor-pointer z-50 bg-transparent"
         >
           <span
-            className={`w-6 h-[2px] bg-black transition-all ${
+            className={`barras w-6 h-[2px] bg-black transition-all ${
               menuOpen ? "rotate-45 translate-y-[6px]" : ""
             }`}
           ></span>
           <span
-            className={`w-6 h-[2px] bg-black transition-all ${
+            className={`barras w-6 h-[2px] bg-black transition-all ${
               menuOpen ? "opacity-0" : ""
             }`}
           ></span>
           <span
-            className={`w-6 h-[2px] bg-black transition-all ${
+            className={`barras w-6 h-[2px] bg-black transition-all ${
               menuOpen ? "-rotate-45 -translate-y-[6px]" : ""
             }`}
           ></span>
@@ -108,7 +108,7 @@ function Header() {
 
       {/* Menú móvil desplegable */}
       <div
-        className={`fixed top-[80px] left-0 w-full bg-white flex flex-col items-center text-lg transition-all duration-300 overflow-hidden xl:hidden ${
+        className={`fixed top-[80px] left-0 w-full links-burger flex flex-col items-center border-b border-brown shadow-lg text-lg transition-all duration-300 overflow-hidden xl:hidden ${
           menuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -116,28 +116,28 @@ function Header() {
           <Link
             to="/"
             onClick={() => setMenuOpen(false)}
-            className={`py-4 ${isActive("/")}`}
+            className={`links-burger py-4 ${isActive("/")}`}
           >
             WORK
           </Link>
           <Link
             to="/skills"
             onClick={() => setMenuOpen(false)}
-            className={`py-4 ${isActive("/skills")}`}
+            className={`links-burger py-4 ${isActive("/skills")}`}
           >
             SKILLS
           </Link>
           <Link
             to="/experience"
             onClick={() => setMenuOpen(false)}
-            className={`py-4 ${isActive("/experience")}`}
+            className={`links-burger py-4 ${isActive("/experience")}`}
           >
             FORMATION & EXPERIENCE
           </Link>
           <Link
             to="/contact"
             onClick={() => setMenuOpen(false)}
-            className={`py-4 ${isActive("/contact")}`}
+            className={`links-burger py-4 ${isActive("/contact")}`}
           >
             CONTACT
           </Link>

@@ -2,13 +2,13 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 export default function Experience() {
     return (
-        <section className="min-h-screen py-20 px-6 md:px-20 flex flex-col items-center relative top-25 text-[#4D3F2B]">
+        <section className="min-h-screen py-20 px-6 md:px-20 flex flex-col items-center relative top-25 ">
             <div className="max-w-6xl w-full">
                 <h2 className="text-4xl font-bold text-center mb-11 tracking-wide">
                     {/* <span className="text-[#BDB246]">Competencias</span> y Habilidades */}
                     FORMATION & EXPERIENCE
                 </h2>
-                <h2 className="text-center text-lg md:text-xl text-[#4D3F2B]/80 mb-21">
+                <h2 className="text-center text-lg md:text-xl /80 mb-21">
                     En esta sección podrás conocer mis principales competencias técnicas y personales, <br></br>
                     así como las herramientas y tecnologías que manejo.
                 </h2>
@@ -17,13 +17,13 @@ export default function Experience() {
                     {/* Formación */}
                     <div>
                         <div className="flex items-center gap-3 mb-8 relative -left-4">
-                            <GraduationCap size={35} color="#4D3F2B" strokeWidth={1.5} className="relative" />
-                            <h2 className="text-3xl font-semibold text-[#4D3F2B] tracking-wide">
+                            <GraduationCap size={35} color="#BDB246" strokeWidth={1.5} className="relative" />
+                            <h2 className="text-3xl font-semibold  tracking-wide">
                                 Formación
                             </h2>
                         </div>
 
-                        <div className="space-y-10 text-[#4D3F2B]">
+                        <div className="space-y-10 ">
                             <div className="border-l-2 border-[#4D3F2B]/60 pl-6 relative">
                                 <div className="absolute -left-3 top-1.5 w-5 h-5 bg-[#BDB246] rounded-full"></div>
                                 <h3 className="text-xl font-semibold text-[#BDB246]">
@@ -34,9 +34,9 @@ export default function Experience() {
                                 </p>
                                 <p className=" leading-relaxed">
                                     Formación en desarrollo full-stack con tecnologías como{" "}
-                                    <span className="text-[#4D3F2B]">React, Node.js, PHP, Java, SQL</span>
+                                    <span className="">React, Node.js, PHP, Java, SQL</span>
                                     y frameworks modernos como{" "}
-                                    <span className="text-[#4D3F2B]">Tailwind CSS</span>.
+                                    <span className="">Tailwind CSS</span>.
                                 </p>
                             </div>
 
@@ -53,14 +53,14 @@ export default function Experience() {
                     {/* Experiencia */}
                     <div>
                         <div className="flex items-center gap-3 mb-8 relative -left-4">
-                            <Briefcase size={32} color="#4D3F2B" strokeWidth={1.75} className="relative " />
-                            <h2 className="text-3xl font-semibold text-[#4D3F2B] tracking-wide">
+                            <Briefcase size={32} color="#BDB246" strokeWidth={1.75} className="relative " />
+                            <h2 className="text-3xl font-semibold  tracking-wide">
                                 Experiencia
                             </h2>
                         </div>
 
-                        <div className="space-y-8 text-[#4D3F2B]">
-                            <div className="border-l-2 border-[#4D3F2B]/60 pl-6 relative text-[#4D3F2B]">
+                        <div className="space-y-8 ">
+                            <div className="border-l-2 border-[#4D3F2B]/60 pl-6 relative ">
                                 <div className="absolute -left-3 top-1.5 w-5 h-5 bg-[#BDB246] rounded-full"></div>
                                 <h3 className="text-xl font-semibold text-[#BDB246]">Desarrollador Web</h3>
                                 <p className="text-sm mb-1">
@@ -68,7 +68,7 @@ export default function Experience() {
                                 </p>
                                 <p className=" leading-relaxed">
                                     Encargado del desarrollo y diseño de la aplicación web en el proyecto{" "}
-                                    <span className="font-medium text-[#4D3F2B]">CDS Race Experience 5G</span>,
+                                    <span className="font-medium ">CDS Race Experience 5G</span>,
                                     colaborando con <span className="">I.E.S. Ribera del Tajo</span>
                                     e <span className="">I.E.S. San Isidro</span> (Talavera de la Reina).
                                 </p>

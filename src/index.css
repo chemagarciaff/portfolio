@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @font-face {
   font-family: clone;
@@ -40,7 +44,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    background: linear-gradient(to right, #111111, #222222 50%, #111111);
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -51,10 +56,9 @@
 }
 
 
-a, .links, .linkedin
+a, .linkedin
 a:visited {
   color: rgba(255, 255, 255, 0.87);
-  text-decoration: none;
 }
 
 body {
@@ -75,7 +79,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -89,35 +93,43 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.gallery, .video_fix, video, .projects, .header-bg {
-  background-color: #242424;
+.gallery, .video_fix, video, .projects {
+  background-color: #24242400;
 }
 
+.header-bg {
+    background: linear-gradient(to right, #111111, #222222 50%, #111111);
+}
+
+.links-burger{
+    background: linear-gradient(to right, #111111, #222222 50%, #111111);
+}
+
+.barras {
+    background-color: rgba(255, 255, 255, 0.87);
+  }
+
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #111111;
-    /* background-color: #EEEEEE; */
+  :root, .header-bg, .links  {
+    color: #4D3F2B;
     background: linear-gradient(to right, #CCCCCC, #EEEEEE 50%, #CCCCCC);
   }
   
-  .header-bg {
+  a {
+    color: #4D3F2B;
+  }
 
+  .barras {
+    background-color: #4D3F2B;
+  }
+
+  .links-burger {
     background: linear-gradient(to right, #CCCCCC, #EEEEEE 50%, #CCCCCC);
-  }
-  a:hover, .links, .linkedin {
-    color: #111111;
-  }
-
-  button {
-    background-color: #f9f9f9;
   }
 
   .gallery, .video_fix, .projects  {
     background-color: #EEEEEE00;
   }
 
-  .nombre{
-    
-  }
 
 }

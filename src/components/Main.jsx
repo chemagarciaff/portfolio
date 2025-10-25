@@ -46,7 +46,7 @@ function Main() {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="flex flex-col items-center gap-6"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-[#4D3F2B]">
+          <h1 className="text-4xl md:text-5xl font-bold ">
             ¡Bienvenido!
           </h1>
 
@@ -54,10 +54,10 @@ function Main() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
-            className="max-w-2xl text-base md:text-lg leading-relaxed text-[#4D3F2B]/90 
+            className="max-w-2xl text-base md:text-xl leading-relaxed
             backdrop-blur-sm p-6 rounded-2xl"
           >
-            Mi nombre es <span className="font-semibold text-[#BDB246]">Chema</span> y soy diseñador y desarrollador web.
+            Mi nombre es <span className="font-semibold text-[#BDB246]]">Chema</span> y soy diseñador y desarrollador web.
             <br />A continuación podrás ver algunos de mis trabajos realizados durante mi etapa como estudiante de{" "}
             <span className="font-medium text-[#BDB246]">Desarrollo de Aplicaciones Web</span>.
             <br />
@@ -67,7 +67,7 @@ function Main() {
       </section>
 
       {/* Sección scrollable */}
-      <section className="grid gap-10 md:gap-14 projects relative z-10 top-175 pb-30 px-20">
+      <section className="grid gap-10 md:gap-14 projects relative z-10 top-175 pb-30 xl:px-20 px-5">
         {projects.map((project) => (
           <Link
             key={project.title}
