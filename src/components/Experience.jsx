@@ -1,0 +1,84 @@
+import { Briefcase, GraduationCap } from "lucide-react";
+
+export default function Experience() {
+    return (
+        <section className="min-h-screen py-20 px-6 md:px-20 flex flex-col items-center relative top-25 text-[#4D3F2B]">
+            <div className="max-w-6xl w-full">
+                <h2 className="text-4xl font-bold text-center mb-11 tracking-wide">
+                    {/* <span className="text-[#BDB246]">Competencias</span> y Habilidades */}
+                    FORMATION & EXPERIENCE
+                </h2>
+                <h2 className="text-center text-lg md:text-xl text-[#4D3F2B]/80 mb-21">
+                    En esta sección podrás conocer mis principales competencias técnicas y personales, <br></br>
+                    así como las herramientas y tecnologías que manejo.
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
+
+                    {/* Formación */}
+                    <div>
+                        <div className="flex items-center gap-3 mb-8 relative -left-4">
+                            <GraduationCap size={35} color="#4D3F2B" strokeWidth={1.5} className="relative" />
+                            <h2 className="text-3xl font-semibold text-[#4D3F2B] tracking-wide">
+                                Formación
+                            </h2>
+                        </div>
+
+                        <div className="space-y-10 text-[#4D3F2B]">
+                            <div className="border-l-2 border-[#4D3F2B]/60 pl-6 relative">
+                                <div className="absolute -left-3 top-1.5 w-5 h-5 bg-[#BDB246] rounded-full"></div>
+                                <h3 className="text-xl font-semibold text-[#BDB246]">
+                                    CFGS Desarrollo de Aplicaciones Web
+                                </h3>
+                                <p className="text-sm mb-1">
+                                    I.E.S. Ribera del Tajo — 09/23 - 06/25
+                                </p>
+                                <p className=" leading-relaxed">
+                                    Formación en desarrollo full-stack con tecnologías como{" "}
+                                    <span className="text-[#4D3F2B]">React, Node.js, PHP, Java, SQL</span>
+                                    y frameworks modernos como{" "}
+                                    <span className="text-[#4D3F2B]">Tailwind CSS</span>.
+                                </p>
+                            </div>
+
+                            <div className="border-l-2 border-[#4D3F2B]/60 pl-6 relative">
+                                <div className="absolute -left-3 top-1.5 w-5 h-5 bg-[#BDB246] rounded-full"></div>
+                                <h3 className="text-xl font-semibold text-[#BDB246]">Bachillerato</h3>
+                                <p className="text-sm mb-1">
+                                    I.E.S. San Isidro — 09/13 - 06/25
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Experiencia */}
+                    <div>
+                        <div className="flex items-center gap-3 mb-8 relative -left-4">
+                            <Briefcase size={32} color="#4D3F2B" strokeWidth={1.75} className="relative " />
+                            <h2 className="text-3xl font-semibold text-[#4D3F2B] tracking-wide">
+                                Experiencia
+                            </h2>
+                        </div>
+
+                        <div className="space-y-8 text-[#4D3F2B]">
+                            <div className="border-l-2 border-[#4D3F2B]/60 pl-6 relative text-[#4D3F2B]">
+                                <div className="absolute -left-3 top-1.5 w-5 h-5 bg-[#BDB246] rounded-full"></div>
+                                <h3 className="text-xl font-semibold text-[#BDB246]">Desarrollador Web</h3>
+                                <p className="text-sm mb-1">
+                                    CDS Race Experience 5G — 03/25 - 06/25
+                                </p>
+                                <p className=" leading-relaxed">
+                                    Encargado del desarrollo y diseño de la aplicación web en el proyecto{" "}
+                                    <span className="font-medium text-[#4D3F2B]">CDS Race Experience 5G</span>,
+                                    colaborando con <span className="">I.E.S. Ribera del Tajo</span>
+                                    e <span className="">I.E.S. San Isidro</span> (Talavera de la Reina).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    );
+}

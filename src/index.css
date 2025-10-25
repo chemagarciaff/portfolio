@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: clone;
+  src: url("./assets/fonts/clone/fonnts.com-Clone_Rounded_Latn_Rg.otf");
+}
+
+@font-face {
+  font-family: caviar_dreams;
+  src: url("./assets/fonts/caviar_dreams/CaviarDreams.ttf");
+}
+
+@font-face {
+  font-family: designer;
+  src: url("./assets/fonts/designer/DESIGNER.otf");
+}
+
+@font-face {
+  font-family: futurist;
+  src: url("./assets/fonts/futurist_fixed_width/FUTRFW.TTF");
+}
+
+@font-face {
+  font-family: garet;
+  src: url("./assets/fonts/garet/Garet-Book.otf");
+}
+
+@font-face {
+  font-family: lemon_milk;
+  src: url("./assets/fonts/lemon_milk/LEMONMILK-Regular.otf");
+}
+
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: clone;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+
+a, .links, .linkedin
+a:visited {
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.gallery, .video_fix, video, .projects, .header-bg {
+  background-color: #242424;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #111111;
+    /* background-color: #EEEEEE; */
+    background: linear-gradient(to right, #CCCCCC, #EEEEEE 50%, #CCCCCC);
+  }
+  
+  .header-bg {
+
+    background: linear-gradient(to right, #CCCCCC, #EEEEEE 50%, #CCCCCC);
+  }
+  a:hover, .links, .linkedin {
+    color: #111111;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+
+  .gallery, .video_fix, .projects  {
+    background-color: #EEEEEE00;
+  }
+
+  .nombre{
+    
+  }
+
+}
