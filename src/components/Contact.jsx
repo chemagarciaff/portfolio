@@ -11,7 +11,7 @@ export default function Contact() {
           CONTACT <span className="text-[#BDB246]">INFORMATION</span>
         </h2>
 
-        <p className="text-lg md:text-xl text-gray-400 mb-16">
+        <p className="text-lg md:text-xl  mb-16">
           Si quieres ponerte en contacto conmigo para colaborar, resolver dudas o
           conocer más sobre mi trabajo, aquí tienes mis datos de contacto.
         </p>
