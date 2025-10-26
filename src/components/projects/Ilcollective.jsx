@@ -4,39 +4,30 @@ import img3 from './../../assets/ilcollective/3.png'
 import img4 from './../../assets/ilcollective/4.png'
 import img5 from './../../assets/ilcollective/5.png'
 import img6 from './../../assets/ilcollective/6.png'
-// import video from './../../assets/videos/ilcollective.mp4'
+// import video from './../../assets/videos/GreenBloom.mp4'
 
 export default function Ilcollective() {
     return (
         <div className='pb-20 relative'>
             <section
-                className="w-full pl-30 flex flex-col lg:flex-row justify-between items-center gap-6 text-center mt-60 transition-opacity duration-20"
+                className="w-full px-20 border-1 border-black flex flex-col lg:flex-row justify-between items-center gap-6 text-center mt-60 transition-opacity duration-20"
             >
-                <h1 className="text-3xl md:text-4xl font-bold">IlCollective</h1>
+                <h1 className="text-3xl md:text-4xl font-bold">ILCOLLECTIVE</h1>
                 <div className="relative h-80 bg-white overflow-hidden">
                     {/* <video src={video} className="w-full h-full" autoPlay muted loop></video> */}
                     <div className="video_fix absolute top-0 left-0 w-full sm:h-8 h-13 bg-white"></div>
                     <div className="video_fix absolute bottom-0 left-0 w-full sm:h-8 h-13 bg-white"></div>
                 </div>
             </section>
-            <div className="grid grid-cols-9 grid-rows-6 gap-4 relative top-30 pb-30">
-                <img src={img1}  alt='' className="col-span-6 row-span-4" />
-                <img src={img2}  alt='' className="col-span-3 row-span-2 col-start-7" />
-                <img src={img3}  alt='' className="col-span-3 row-span-2 col-start-7 row-start-3" />
-                <img src={img4}  alt='' className="col-span-3 row-span-2 row-start-5" />
-                <img src={img5}  alt='' className="col-span-3 row-span-2 col-start-4 row-start-5" />
-                <img src={img6}  alt='' className="col-span-3 row-span-2 col-start-7 row-start-5" />
+            <div className="grid lg:grid-cols-9 lg:grid-rows-6 grid-cols-1 lg:gap-5 gap-7 relative top-30 pb-30 px-5">
+
+                <img src={img1} className="border-1 border-gray-500 lg:col-span-6 lg:row-span-4"/>
+                <img src={img4} className="border-1 border-gray-500 lg:col-span-3 lg:row-span-2 lg:col-start-7"/>
+                <img src={img3} className="border-1 border-gray-500 lg:col-span-3 lg:row-span-2 lg:col-start-7 lg:row-start-3"/>
+                <img src={img2} className="border-1 border-gray-500 lg:col-span-3 lg:row-span-2 lg:row-start-5"/>
+                <img src={img6} className="border-1 border-gray-500 lg:col-span-3 lg:row-span-2 lg:col-start-4 lg:row-start-5"/>
+                <img src={img5} className="border-1 border-gray-500 lg:col-span-3 lg:row-span-2 lg:col-start-7 lg:row-start-5"/>
             </div>
-            {/* 
-            <div className="grid xl:grid-cols-5 xl:grid-rows-6 grid-cols-1 gap-4 relative top-38 left-1/2 -translate-x-1/2 gallery pb-20">
-                <img src={img1} alt="1" className="rounded-lg xl:col-span-3 xl:row-span-4" />
-                <img src={img4} alt="2" className="rounded-lg xl:col-span-2 xl:row-span-2 xl:col-start-4 xl:row-start-3" />
-                <img src={img5} alt="3" className="rounded-lg xl:col-span-2 xl:row-span-2 xl:col-start-4 xl:row-start-1" />
-                <img src={img3} alt="4" className="rounded-lg xl:col-span-2 xl:row-span-2 xl:row-start-5" />
-                <img src={img2} alt="5" className="rounded-lg xl:col-span-2 xl:row-span-2 xl:col-start-3 xl:row-start-5" />
-                <img src={img6} alt="6" className="rounded-lg xl:col-start-5 xl:row-start-5" />
-                <img src={img7} alt="7" className="rounded-lg xl:col-start-5 xl:row-start-6" />
-            </div> */}
         </div>
     );
 }

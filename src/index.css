@@ -110,7 +110,7 @@ button:focus-visible {
   }
 
 @media (prefers-color-scheme: light) {
-  :root, .header-bg, .links  {
+  :root, .header-bg  {
     color: #4D3F2B;
     background: linear-gradient(to right, #CCCCCC, #EEEEEE 50%, #CCCCCC);
   }
