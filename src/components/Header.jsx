@@ -156,7 +156,7 @@ function Header() {
       {/* ======= VENTANA EMERGENTE FALSA ======= */}
       {showLetter && (
         <div className="absolute top-4 backdrop-blur-sm flex justify-center items-center z-[999]">
-          <div className="relative backdrop-blur-sm bg-gray-200 w-[90%] rounded-xl p-8 shadow-2xl animate-fadeInScale border border-[#BDB246]/40">
+          <div className="relative text-[#4D3F2B] backdrop-blur-sm bg-gray-200 w-[90%] rounded-xl p-8 shadow-2xl animate-fadeInScale border border-[#BDB246]/40">
             <button
               onClick={() => setShowLetter(false)}
               className="absolute top-3 right-3 hover:text-white transition"
