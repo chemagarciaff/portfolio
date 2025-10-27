@@ -42,14 +42,47 @@ export default function Experience() {
 
                             <div className="border-l-2 border-[#4D3F2B]/60 pl-6 relative">
                                 <div className="absolute -left-3 top-1.5 w-5 h-5 bg-[#BDB246] rounded-full"></div>
+                                <h3 className="text-xl font-semibold text-[#BDB246]">
+                                    CFGS Proyectos y Dirección de Obras de Decoración
+                                </h3>
+                                <p className="text-sm mb-1">
+                                    Escuela de ArteDiez — 09/18 - 06/20
+                                </p>
+                                <p className="leading-relaxed">
+                                    Formación en los <span className="font-medium">principios del diseño, composición, color y
+                                        representación gráfica</span>. Desarrollo de proyectos decorativos y de interiorismo,
+                                    aplicando criterios estéticos, funcionales y técnicos. Experiencia con
+                                    <span className="font-medium"> herramientas de diseño 2D y 3D</span>.
+                                </p>
+                            </div>
+
+                            <div className="border-l-2 border-[#4D3F2B]/60 pl-6 relative">
+                                <div className="absolute -left-3 top-1.5 w-5 h-5 bg-[#BDB246] rounded-full"></div>
+                                <h3 className="text-xl font-semibold text-[#BDB246]">
+                                    Grado en Física (3 años cursados)
+                                </h3>
+                                <p className="text-sm mb-1">
+                                    Universidad Complutense de Madrid — 09/15 - 06/18
+                                </p>
+                                <p className="leading-relaxed">
+                                    Formación en los <span className="font-medium">fundamentos teóricos y experimentales de la física</span>,
+                                    incluyendo <span className="font-medium">matemáticas avanzadas, análisis de datos,
+                                        programación científica</span> y resolución de problemas complejos. Desarrollo de
+                                    pensamiento crítico y capacidad analítica.
+                                </p>
+                            </div>
+
+
+                            <div className="border-l-2 border-[#4D3F2B]/60 pl-6 relative">
+                                <div className="absolute -left-3 top-1.5 w-5 h-5 bg-[#BDB246] rounded-full"></div>
                                 <h3 className="text-xl font-semibold text-[#BDB246]">Bachillerato</h3>
                                 <p className="text-sm mb-1">
-                                    I.E.S. San Isidro — 09/13 - 06/25
+                                    I.E.S. San Isidro — 09/13 - 06/15
                                 </p>
                             </div>
                         </div>
                     </div>
-                    
+
                     {/* Experiencia */}
                     <div>
                         <div className="flex items-center gap-3 mb-8 relative -left-4">
@@ -64,7 +97,7 @@ export default function Experience() {
                                 <div className="absolute -left-3 top-1.5 w-5 h-5 bg-[#BDB246] rounded-full"></div>
                                 <h3 className="text-xl font-semibold text-[#BDB246]">Desarrollador Web</h3>
                                 <p className="text-sm mb-1">
-                                    CDS Race Experience 5G — 03/25 - 06/25
+                                    Hewllet Packard Enterprise — 03/25 - 06/25
                                 </p>
                                 <p className=" leading-relaxed">
                                     Encargado del desarrollo y diseño de la aplicación web en el proyecto{" "}

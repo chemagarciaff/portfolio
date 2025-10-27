@@ -56,7 +56,7 @@
 }
 
 
-a, .linkedin
+a, .linkedin, .icon_skills
 a:visited {
   color: rgba(255, 255, 255, 0.87);
 }
@@ -115,7 +115,7 @@ button:focus-visible {
     background: linear-gradient(to right, #CCCCCC, #EEEEEE 50%, #CCCCCC);
   }
   
-  a {
+  a, .icon_skills, .linkedin {
     color: #4D3F2B;
   }
 

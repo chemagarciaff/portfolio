@@ -3,7 +3,7 @@ import { Code, Languages, Paintbrush, Server, UserCheck, Wrench } from "lucide-r
 export default function Skills() {
     const skillCategories = [
         {
-            icon: <UserCheck size={32} color="rgba(255, 255, 255, 0.87)" strokeWidth={1.75} />,
+            icon: <UserCheck size={32} className="icon_skill" strokeWidth={1.75} />,
             title: "Aptitudes",
             items: [
                 "Responsabilidad y compromiso.",
@@ -14,32 +14,32 @@ export default function Skills() {
             ],
         },
         {
-            icon: <Code size={32} color="rgba(255, 255, 255, 0.87)" strokeWidth={1.75} />,
+            icon: <Code size={32} className="icon_skill" strokeWidth={1.75} />,
             title: "Lenguajes de Programación",
             items: ["Java", "JavaScript", "TypeScript", "HTML5 / CSS3", "PHP", "SQL / PL/SQL"],
         },
         {
-            icon: <Server size={32} color="rgba(255, 255, 255, 0.87)" strokeWidth={1.75} />,
+            icon: <Server size={32} className="icon_skill" strokeWidth={1.75} />,
             title: "Frameworks y Librerías",
             items: ["React JS", "Bootstrap", "Tailwind CSS"],
         },
         {
-            icon: <Wrench size={32} color="rgba(255, 255, 255, 0.87)" strokeWidth={1.75} />,
+            icon: <Wrench size={32} className="icon_skill" strokeWidth={1.75} />,
             title: "Desarrollo Backend",
             items: ["APIs REST", "Arquitectura MVC", "Gestión de servidores"],
         },
         {
-            icon: <Code size={32} color="rgba(255, 255, 255, 0.87)" strokeWidth={1.75} />,
+            icon: <Code size={32} className="icon_skill" strokeWidth={1.75} />,
             title: "Entornos y Herramientas",
             items: ["Visual Studio Code", "NetBeans", "Eclipse", "Git / GitHub", "WordPress (CMS)"],
         },
         {
-            icon: <Paintbrush size={32} color="rgba(255, 255, 255, 0.87)" strokeWidth={1.75} />,
+            icon: <Paintbrush size={32} className="icon_skill" strokeWidth={1.75} />,
             title: "Diseño y Ofimática",
             items: ["Adobe Photoshop", "Adobe Illustrator", "Microsoft Excel (avanzado)", "Microsoft Office"],
         },
         {
-            icon: <Languages size={32} color="rgba(255, 255, 255, 0.87)" strokeWidth={1.75} />,
+            icon: <Languages size={32} className="icon_skill" strokeWidth={1.75} />,
             title: "Idiomas",
             items: ["Español (nativo)", "Inglés (avanzado)"],
         },
@@ -63,7 +63,7 @@ export default function Skills() {
                         <div
                             key={index}
                             className="group p-6 border-l-4 border-[#BDB246]/60 hover:border-[#BDB246] transition-all bg-transparent"
-                        >
+                            >
                             <div className="flex items-center gap-3 mb-4">
                                 {category.icon}
                                 <h3 className="text-2xl font-semibold text-[#BDB246]">

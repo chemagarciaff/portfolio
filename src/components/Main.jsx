@@ -16,8 +16,8 @@ function Main() {
   const projects = [
     { img: greenbloom, title: 'GreenBloom', path: '/project/greenbloom' },
     { img: ilco, title: 'Ilcollective', path: '/project/ilcollective' },
-    { img: sync4, title: 'Sync', path: '/project/sync' },
     { img: guesswhere, title: 'GuessWhere', path: '/project/guesswhere' },
+    { img: sync4, title: 'Sync', path: '/project/sync' },
     { img: snake, title: 'Snake Game', path: '/project/snake' },
     { img: haus, title: 'HausEstate', path: '/project/hausestate' },
   ];

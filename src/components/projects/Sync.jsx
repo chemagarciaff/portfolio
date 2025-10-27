@@ -49,7 +49,7 @@ export default function Sync() {
 
 
 
-            <div className="grid lg:grid-cols-9 lg:grid-rows-6 grid-cols-1 lg:gap-5 gap-7 relative top-30 pb-30 px-5">
+            <div className="grid lg:grid-cols-9 lg:grid-rows-6 grid-cols-1 lg:gap-5 gap-7 relative top-25 pb-30 px-5">
                 <img src={img1} className="border-1 border-gray-500 lg:col-span-6 lg:row-span-4" />
                 <img src={img2} className="border-1 border-gray-500 lg:col-span-3 lg:row-span-2 lg:col-start-7" />
                 <img src={img3} className="border-1 border-gray-500 lg:col-span-3 lg:row-span-2 lg:col-start-7 lg:row-start-3" />

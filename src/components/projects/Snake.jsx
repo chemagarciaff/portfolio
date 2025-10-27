@@ -46,7 +46,7 @@ export default function Snake() {
                 </div>
             </section>
 
-            <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-7 relative top-30 pb-30 px-5">
+            <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-5 gap-7 relative top-25 pb-30 px-5">
 
                 <img src={img1} className="border-1 border-gray-500 " />
                 <img src={img2} className="border-1 border-gray-500  " />
