@@ -116,9 +116,46 @@ function Header() {
         </div>
       </header>
 
+      {/* ===== MENU DESPLEGABLE MOVIL ===== */}
+{menuOpen && (
+  <nav className="fixed top-[100px] left-0 w-full links-burger shadow-lg z-[90] xl:hidden animate-fadeIn">
+    <ul className="flex flex-col items-center gap-6 py-8 text-lg">
+      <Link
+        to="/"
+        className={`cursor-pointer links ${isActive("/")}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        WORK
+      </Link>
+      <Link
+        to="/skills"
+        className={`cursor-pointer links ${isActive("/skills")}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        SKILLS
+      </Link>
+      <Link
+        to="/experience"
+        className={`cursor-pointer links ${isActive("/experience")}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        FORMATION & EXPERIENCE
+      </Link>
+      <Link
+        to="/contact"
+        className={`cursor-pointer links ${isActive("/contact")}`}
+        onClick={() => setMenuOpen(false)}
+      >
+        CONTACT
+      </Link>
+    </ul>
+  </nav>
+)}
+
+
       {/* ======= VENTANA EMERGENTE FALSA ======= */}
       {showLetter && (
-        <div className="fixed inset-0  backdrop-blur-sm flex justify-center items-center z-[999]">
+        <div className="absolute top-4 backdrop-blur-sm flex justify-center items-center z-[999]">
           <div className="relative backdrop-blur-sm bg-gray-200 w-[90%] rounded-xl p-8 shadow-2xl animate-fadeInScale border border-[#BDB246]/40">
             <button
               onClick={() => setShowLetter(false)}

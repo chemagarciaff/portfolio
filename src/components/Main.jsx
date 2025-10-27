@@ -36,10 +36,10 @@ function Main() {
   }, []);
 
   return (
-    <main className="flex flex-col gap-16 relative">
+    <main className="flex flex-col gap-1 relative">
       {/* Sección fija con opacidad dinámica */}
       <section style={{ opacity }}
-      className="flex flex-col items-center justify-center text-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-6">
+      className="flex flex-col items-center justify-center text-center fixed top-[350px] left-1/2 -translate-x-1/2 -translate-y-1/2 px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ function Main() {
       </section>
 
       {/* Sección scrollable */}
-      <section className="grid gap-10 md:gap-14 projects relative z-10 top-175 pb-30 xl:px-20 px-5">
+      <section className="grid gap-10 md:gap-14 projects relative z-10 top-155 pb-30 xl:px-20 px-5">
         {projects.map((project) => (
           <Link
             key={project.title}
