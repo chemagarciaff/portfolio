@@ -39,27 +39,27 @@ function Header() {
         {/* ===== Vista de ESCRITORIO ===== */}
         <div className="hidden xl:flex w-full justify-between items-center">
           <nav>
-            <ul className="flex flex-wrap gap-8 text-md md:text-md">
+            <ul className="flex flex-wrap gap-6 text-sm md:text-md">
               <Link to="/" className={`cursor-pointer links ${isActive("/")}`}>
-                WORK
+                TRABAJOS
               </Link>
               <Link
                 to="/skills"
                 className={`cursor-pointer links ${isActive("/skills")}`}
               >
-                SKILLS
+                APTITUDES
               </Link>
               <Link
                 to="/experience"
                 className={`cursor-pointer links ${isActive("/experience")}`}
               >
-                FORMATION & EXPERIENCE
+                FORMACIÓN & EXPERIENCIA
               </Link>
               <Link
                 to="/contact"
                 className={`cursor-pointer links ${isActive("/contact")}`}
               >
-                CONTACT
+                CONTACTO
               </Link>
             </ul>
           </nav>
@@ -73,7 +73,7 @@ function Header() {
 
           <div className="flex gap-5 justify-center items-center relative">
             {/* Contenedor del Mail con alerta */}
-            <div className="relative cursor-pointer"  onClick={() => setShowLetter(true)}>
+            <div className="relative cursor-pointer" onClick={() => setShowLetter(true)}>
 
               <Mail className="linkedin" />
               {!showLetter && (
@@ -82,13 +82,15 @@ function Header() {
             </div>
 
             {/* Icono de LinkedIn */}
+            <a href="https://www.linkedin.com/in/jose-maria-garcia-fernandez-524636291/" target="_blank" className="linkedin">
             <svg
               className="w-[30px] linkedin"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 640 640"
-            >
-              <path d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z" />
+              >
+              <path fill="currentColor" d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z" />
             </svg>
+              </a>
           </div>
         </div>
 
@@ -116,10 +118,47 @@ function Header() {
         </div>
       </header>
 
+      {/* ===== MENU DESPLEGABLE MOVIL ===== */}
+      {menuOpen && (
+        <nav className="fixed top-[100px] left-0 w-full links-burger shadow-lg z-[90] xl:hidden animate-fadeIn">
+          <ul className="flex flex-col items-center gap-6 py-8 text-lg">
+            <Link
+              to="/"
+              className={`cursor-pointer links ${isActive("/")}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              TRABAJOS
+            </Link>
+            <Link
+              to="/skills"
+              className={`cursor-pointer links ${isActive("/skills")}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              APTITUDES
+            </Link>
+            <Link
+              to="/experience"
+              className={`cursor-pointer links ${isActive("/experience")}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              FORMACIÓN & EXPERIENCIA
+            </Link>
+            <Link
+              to="/contact"
+              className={`cursor-pointer links ${isActive("/contact")}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              CONTACTO
+            </Link>
+          </ul>
+        </nav>
+      )}
+
+
       {/* ======= VENTANA EMERGENTE FALSA ======= */}
       {showLetter && (
-        <div className="fixed inset-0  backdrop-blur-sm flex justify-center items-center z-[999]">
-          <div className="relative backdrop-blur-sm bg-gray-200 w-[90%] rounded-xl p-8 shadow-2xl animate-fadeInScale border border-[#BDB246]/40">
+        <div className="absolute top-4 backdrop-blur-sm flex justify-center items-center z-[999]">
+          <div className="relative text-[#4D3F2B] backdrop-blur-sm bg-gray-200 w-[90%] rounded-xl p-8 shadow-2xl animate-fadeInScale border border-[#BDB246]/40">
             <button
               onClick={() => setShowLetter(false)}
               className="absolute top-3 right-3 hover:text-white transition"
@@ -150,3 +189,5 @@ function Header() {
 }
 
 export default Header;
+
+

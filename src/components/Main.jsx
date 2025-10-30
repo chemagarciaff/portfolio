@@ -38,17 +38,17 @@ function Main() {
   }, []);
 
   return (
-    <main className="flex flex-col gap-16 relative">
+    <main className="flex flex-col gap-1 relative">
       {/* Sección fija con opacidad dinámica */}
       <section style={{ opacity }}
-      className="flex flex-col items-center justify-center text-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-6">
+      className="flex flex-col items-center justify-center text-center fixed top-[350px] left-1/2 -translate-x-1/2 -translate-y-1/2 px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="flex flex-col items-center gap-6"
         >
-          <h1 className="text-4xl md:text-5xl font-bold ">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#BDB246] ">
             ¡Bienvenido!
           </h1>
 
@@ -59,17 +59,17 @@ function Main() {
             className="max-w-2xl text-base md:text-xl leading-relaxed
             backdrop-blur-sm p-6 rounded-2xl"
           >
-            Mi nombre es <span className="font-semibold text-[#BDB246]]">Chema</span> y soy diseñador y desarrollador web.
-            <br />A continuación podrás ver algunos de mis trabajos realizados durante mi etapa como estudiante de{" "}
-            <span className="font-medium text-[#BDB246]">Desarrollo de Aplicaciones Web</span>.
-            <br />
-            <span className="italic">¡Espero que te gusten!</span>
+            Mi nombre es <span className="font-semibold text-[#BDB246]]">Chema</span> y soy <span className="font-medium text-[#BDB246]">diseñador y desarrollador web. </span>
+            <br></br>A continuación podrás ver algunos de mis trabajos realizados durante mi etapa como estudiante de{" "}
+            Desarrollo de Aplicaciones Web. 
+            
+            <span className="italic"> ¡Espero que os guste!</span>
           </motion.h2>
         </motion.div>
       </section>
 
       {/* Sección scrollable */}
-      <section className="grid gap-10 md:gap-14 projects relative z-10 top-175 pb-30 xl:px-20 px-5">
+      <section className="grid gap-10 md:gap-14 projects relative z-10 top-155 pb-30 xl:px-20 px-5">
         {projects.map((project) => (
           <Link
             key={project.title}
