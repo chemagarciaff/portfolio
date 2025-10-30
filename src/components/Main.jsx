@@ -5,6 +5,7 @@ import greenbloom from './../assets/portadas/greenbloom_home.png';
 import guesswhere from './../assets/portadas/guesswhere_home.png';
 import haus from './../assets/portadas/hausestate_home.png';
 import ilco from './../assets/portadas/ilcollective_home.png';
+import nobelprice from './../assets/portadas/nobelprice_home.png';
 import snake from './../assets/portadas/snake_home.png';
 import sync4 from './../assets/portadas/sync4_home.png';
 import ScrollButton from './ScrollButton';
@@ -20,6 +21,7 @@ function Main() {
     { img: sync4, title: 'Sync', path: '/project/sync' },
     { img: snake, title: 'Snake Game', path: '/project/snake' },
     { img: haus, title: 'HausEstate', path: '/project/hausestate' },
+    { img: nobelprice, title: 'The Nobel Prize', path: '/project/nobelprice' },
   ];
 
   useEffect(() => {
