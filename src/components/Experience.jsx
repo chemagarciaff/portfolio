@@ -6,11 +6,10 @@ export default function Experience() {
             <div className="max-w-6xl w-full">
                 <h2 className="text-4xl font-bold text-center mb-11 tracking-wide">
                     {/* <span className="text-[#BDB246]">Competencias</span> y Habilidades */}
-                    FORMATION & EXPERIENCE
+                    FORMACIÓN & <span className="text-[#BDB246]">EXPERIENCIA</span>
                 </h2>
                 <h2 className="text-center text-lg md:text-xl /80 mb-21">
-                    En esta sección podrás conocer mis principales competencias técnicas y personales, <br></br>
-                    así como las herramientas y tecnologías que manejo.
+                    Aquí podrás conocer los aspectos más destacados de mi trayectoria académica y profesional.
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
 

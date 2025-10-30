@@ -48,9 +48,9 @@ export default function Skills() {
     return (
         <section className="min-h-screen py-20 px-6 md:px-20 flex flex-col items-center relative top-25 ">
             <div className="max-w-6xl w-full">
-                <h2 className="text-4xl font-bold text-center mb-11 tracking-wide">
+                <h2 className="text-4xl font-bold text-center mb-11 tracking-wide text-[#BDB246]">
                     {/* <span className="text-[#BDB246]">Competencias</span> y Habilidades */}
-                    SKILLS
+                    APTITUDES
                 </h2>
                 <h2 className="text-center text-lg md:text-xl  mb-21">
                     En esta sección podrás conocer mis principales competencias técnicas y personales, <br></br>

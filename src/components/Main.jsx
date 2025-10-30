@@ -46,7 +46,7 @@ function Main() {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="flex flex-col items-center gap-6"
         >
-          <h1 className="text-4xl md:text-5xl font-bold ">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#BDB246] ">
             ¡Bienvenido!
           </h1>
 
@@ -57,11 +57,11 @@ function Main() {
             className="max-w-2xl text-base md:text-xl leading-relaxed
             backdrop-blur-sm p-6 rounded-2xl"
           >
-            Mi nombre es <span className="font-semibold text-[#BDB246]]">Chema</span> y soy diseñador y desarrollador web.
-            <br />A continuación podrás ver algunos de mis trabajos realizados durante mi etapa como estudiante de{" "}
-            <span className="font-medium text-[#BDB246]">Desarrollo de Aplicaciones Web</span>.
-            <br />
-            <span className="italic">¡Espero que te gusten!</span>
+            Mi nombre es <span className="font-semibold text-[#BDB246]]">Chema</span> y soy <span className="font-medium text-[#BDB246]">diseñador y desarrollador web. </span>
+            <br></br>A continuación podrás ver algunos de mis trabajos realizados durante mi etapa como estudiante de{" "}
+            Desarrollo de Aplicaciones Web. 
+            
+            <span className="italic"> ¡Espero que os guste!</span>
           </motion.h2>
         </motion.div>
       </section>

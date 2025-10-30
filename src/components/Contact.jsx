@@ -8,7 +8,7 @@ export default function Contact() {
     >
       <div className="max-w-4xl w-full text-center">
         <h2 className="text-4xl font-bold mb-10 tracking-wide">
-          CONTACT <span className="text-[#BDB246]">INFORMATION</span>
+          INFORMACIÓN <span className="text-[#BDB246]">DE CONTACTO</span>
         </h2>
 
         <p className="text-lg md:text-xl  mb-16">
