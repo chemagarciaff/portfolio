@@ -40,24 +40,24 @@ function Header() {
         <div className="hidden xl:flex w-full justify-between items-center">
           <nav>
             <ul className="flex flex-wrap gap-6 text-sm md:text-md">
-              <Link to="/" className={`cursor-pointer links ${isActive("/")}`}>
+              <Link to="/" className={`cursor-pointer links hover:scale-110 transition-all ${isActive("/")}`}>
                 TRABAJOS
               </Link>
               <Link
                 to="/skills"
-                className={`cursor-pointer links ${isActive("/skills")}`}
+                className={`cursor-pointer links hover:scale-110 transition-all  ${isActive("/skills")}`}
               >
                 APTITUDES
               </Link>
               <Link
                 to="/experience"
-                className={`cursor-pointer links ${isActive("/experience")}`}
+                className={`cursor-pointer links hover:scale-110 transition-all  ${isActive("/experience")}`}
               >
                 FORMACIÓN & EXPERIENCIA
               </Link>
               <Link
                 to="/contact"
-                className={`cursor-pointer links ${isActive("/contact")}`}
+                className={`cursor-pointer links hover:scale-110 transition-all  ${isActive("/contact")}`}
               >
                 CONTACTO
               </Link>

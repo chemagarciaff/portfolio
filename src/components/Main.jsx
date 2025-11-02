@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import biblioteca from './../assets/portadas/biblioteca_home.png';
 import greenbloom from './../assets/portadas/greenbloom_home.png';
 import guesswhere from './../assets/portadas/guesswhere_home.png';
 import haus from './../assets/portadas/hausestate_home.png';
@@ -15,13 +16,14 @@ function Main() {
   const [opacity, setOpacity] = useState(1);
 
   const projects = [
-    { img: greenbloom, title: 'GreenBloom', path: '/project/greenbloom' },
-    { img: ilco, title: 'Ilcollective', path: '/project/ilcollective' },
-    { img: guesswhere, title: 'GuessWhere', path: '/project/guesswhere' },
-    { img: sync4, title: 'Sync', path: '/project/sync' },
-    { img: snake, title: 'Snake Game', path: '/project/snake' },
-    { img: haus, title: 'HausEstate', path: '/project/hausestate' },
-    { img: nobelprice, title: 'The Nobel Prize', path: '/project/nobelprice' },
+    { img: ilco, title: 'Ilcollective', path: '/ilcollective' },
+    { img: guesswhere, title: 'GuessWhere', path: '/guesswhere' },
+    { img: biblioteca, title: 'Biblioteca', path: '/biblioteca' },
+    { img: snake, title: 'Snake Game', path: '/snake' },
+    { img: greenbloom, title: 'GreenBloom', path: '/greenbloom' },
+    { img: sync4, title: 'Sync', path: '/sync' },
+    { img: haus, title: 'HausEstate', path: '/hausestate' },
+    { img: nobelprice, title: 'The Nobel Prize', path: '/nobelprice' },
   ];
 
   useEffect(() => {

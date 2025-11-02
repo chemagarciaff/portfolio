@@ -4,6 +4,7 @@ import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Layout from './components/Layout';
 import Main from './components/Main';
+import Biblioteca from './components/projects/Biblioteca';
 import Greenbloom from './components/projects/Greenbloom';
 import GuessWhere from './components/projects/Guesswhere';
 import HausEstate from './components/projects/HausEstate';
@@ -23,13 +24,14 @@ function App() {
           <Route path='experience' element={<Experience />} />
           <Route path='contact' element={<Contact />} />
 
-          <Route path='project/snake' element={<Snake />} />
-          <Route path='project/ilcollective' element={<Ilcollective />} />
-          <Route path='project/guesswhere' element={<GuessWhere />} />
-          <Route path='project/sync' element={<Sync />} />
-          <Route path='project/hausestate' element={<HausEstate />} />
-          <Route path='project/greenbloom' element={<Greenbloom />} />
-          <Route path='project/nobelprice' element={<Nobelprice />} />
+          <Route path='snake' element={<Snake />} />
+          <Route path='ilcollective' element={<Ilcollective />} />
+          <Route path='guesswhere' element={<GuessWhere />} />
+          <Route path='sync' element={<Sync />} />
+          <Route path='hausestate' element={<HausEstate />} />
+          <Route path='greenbloom' element={<Greenbloom />} />
+          <Route path='nobelprice' element={<Nobelprice />} />
+          <Route path='biblioteca' element={<Biblioteca />} />
         </Route>
       </Routes>
 
